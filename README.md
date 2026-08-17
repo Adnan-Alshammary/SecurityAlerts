@@ -65,7 +65,7 @@ this playbook (input playbook) used to retrieving alerts within specific time ra
 <br>
 
   
-3. **secalerts_edit_alert**
+2. **secalerts_edit_alert**
 
 this playbook (input playbook) used to update specific alert status, disposition, assigned to, or add comment. the only required input field is alert_id which can be fetched by the previous playbook.
 
