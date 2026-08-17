@@ -6,7 +6,7 @@
 <br>
 
 
-Security Alerts App allows you to manage your alerts from any index ( or multiple indexes) based on SPL query. It could be used to manage alerts for different team within SOC (threat hunting , compromised assessments, or threat intelligence team, …). 
+Security Alerts App allows you to manage your alerts from any index ( or multiple indexes) based on SPL query. It can be used to manage alerts for different team within SOC (threat hunting , compromised assessments, or threat intelligence team, …). 
 
 the App define two custom roles:
 - secalerts_analyst
