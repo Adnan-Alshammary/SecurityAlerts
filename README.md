@@ -57,6 +57,8 @@ two Splunk SOAR playbooks were developed to interact with the App for automation
 
 this playbook (input playbook) used to retrieving alerts within specific time range based on the dynamic query the admin configured. the playbook has two inputs ( earliest_time and latest_time). this playbook will fetch the alerts details with the last update (last status,comment, ..etc).
 
+- **input:** earliest_time , latest_time
+- **output:** alerts_list
 <img width="300" height="266" alt="input_get_alerts" src="https://github.com/user-attachments/assets/9c4823df-b39e-436b-a92e-fcdce62c5f4a" />
 <img width="342" height="464" alt="get_alerts" src="https://github.com/user-attachments/assets/71fd77f6-6326-4080-86dd-2288c4c106d0" />
 
@@ -69,6 +71,10 @@ this playbook (input playbook) used to retrieving alerts within specific time ra
 
 this playbook (input playbook) used to update specific alert status, disposition, assigned to, or add comment. the only required input field is alert_id which can be fetched by the previous playbook.
 
+- **input:** alert_id (required), comment, disposition, status, assigned_to
+- **output:** check_alert_id
+  - if "alert_id" is valid the result will be (check_alert_id="valid alert ID")  and the alert will be updated.
+  - if "alert_id" is invalid the result will be (check_alert_id="Error: invalid alert ID") and there will be no update to "Security Alerts App"
 <img width="265" height="379" alt="input_to_edit_alerts" src="https://github.com/user-attachments/assets/6750d290-00cf-4c74-afee-b477d8e08ad2" />
 
 <img width="435" height="475" alt="edit_alerts" src="https://github.com/user-attachments/assets/f6b72d71-9c48-47cd-aaac-e109096ad3ab" />
